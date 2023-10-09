@@ -26,10 +26,10 @@
     "express-fileupload": "^1.4.0",
     "https-proxy-agent": "^7.0.2",
     "overlay-navbar": "^1.2.3",
-    "react": "^18.2.0",
+    "react": "^17.0.2",
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
-    "react-dom": "^18.2.0",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
     "react-js-pagination": "^3.0.2",
@@ -42,7 +42,6 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2",
     "styled-components": "^6.0.7",
-    "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
@@ -71,6 +70,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.7",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.0.1",
+    "web-vitals": "^3.5.0"
   }
 }
