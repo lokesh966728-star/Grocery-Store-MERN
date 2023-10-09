@@ -54,12 +54,13 @@ function App() {
         <Route exact path="/login" element={<LoginSignUp />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/about" element={<About />} />
+  <Route exact path="/shop" element={<AddtoCart />} />
 
         {/* protected Routes */}
 
         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
           <Route exact path="/me/update" element={<UpdateProfile />} />
-          <Route exact path="/shop" element={<AddtoCart />} />
+        
 
           <Route exact path="/account" element={<Profile />} />
         </Route>
