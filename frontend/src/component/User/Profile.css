@@ -1,0 +1,147 @@
+.profileContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  background-color: rgb(226, 226, 226);
+}
+
+.pics {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vmax;
+}
+.pics > img {
+  margin-top: 0vmax;
+  margin-left: 9vmax;
+  width: 17vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.pics > img:hover {
+  transform: scale(1.05);
+}
+.pics > a {
+  border: none;
+  background-color: rgb(49, 49, 218);
+  font: 400 1.3vmax "Roboto";
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.8vmax;
+  width: 37%;
+  margin-top: 4vmax;
+  margin-left: 10vmax;
+  text-align: center;
+  transition: all 0.5s;
+}
+.pics > a:hover {
+  background-color: rgb(13, 13, 132);
+}
+
+.pics h4 {
+  color: rgba(0, 0, 0, 0.418);
+  font: 400 2vmax cursive;
+  margin-left: 14vmax;
+  margin-top: 2vmax;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 18vmax;
+  border-left: 2px solid red;
+  height: 23vmax;
+  margin-right: -13vmax;
+  box-sizing: border-box;
+}
+
+.details p {
+  color: rgba(0, 0, 0, 0.418);
+  font: 400 1.4vmax cursive;
+  margin-top: 0.7vmax;
+  margin-bottom: 2.5vmax;
+}
+
+.details h4 {
+  color: black;
+  font: 400 1.4vmax "Roboto";
+}
+
+.details button {
+  width: 11vmax;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 251, 251);
+  transition: all 0.5s;
+  background-color: rgb(239, 33, 33);
+  font: 400 1.2vmax "Roboto";
+  border-radius: 20px;
+  outline: none;
+  padding: 1vmax;
+
+  margin-top: 2vmax;
+  margin-right: 20vmax;
+}
+
+.details button:hover {
+  background-color: rgba(203, 0, 0, 0.926);
+}
+
+@media screen and (width < 430px) {
+  .pics > a {
+    font: 400 1.4vmax "Roboto";
+    margin-left: 12vmax;
+    margin-top: 3vmax;
+  }
+
+  .profileContainer {
+    width: 105vw;
+  }
+  .details {
+    border: none;
+  }
+  .details button {
+    font: 400 1.3vmax "Roboto";
+  }
+  .details p {
+    font: 400 1.5vmax cursive;
+  }
+
+  .details h4 {
+    font: 400 1.5vmax "Roboto";
+  }
+}
+@media screen and (width < 600px) {
+  .details {
+    padding: 9vmax;
+    margin-right: -9vmax;
+  }
+}
+
+@media screen and (width < 400px) {
+  .details {
+    padding: 8vmax;
+    margin-right: -8vmax;
+  }
+}
+
+@media screen and (width < 300px) {
+  .profileContainer {
+    width: 110vw;
+  }
+
+  .details {
+    padding: 5vmax;
+    margin-right: -5vmax;
+  }
+}

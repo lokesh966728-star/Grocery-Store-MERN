@@ -1,0 +1,56 @@
+.AddtoCart {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddtoCart h3 {
+  font-size: 4vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.page {
+  font-size: 1.4vmax;
+  margin: 2vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.AddtoCart > a {
+  background-color: rgb(49, 49, 205);
+  color: white;
+  border: none;
+  padding: 1vmax;
+  cursor: pointer;
+  font: 400 1.1vmax "Roboto";
+  border-radius: 23px;
+  text-decoration: none;
+  margin: 2vmax;
+  width: auto;
+}
+
+.AddtoCart > a:hover {
+  background-color: rgb(34, 34, 185);
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    font-size: 1.6vmax;
+    margin: 1.8vmax;
+  }
+  .AddtoCart > a {
+    padding: 1.1vmax;
+
+    font: 400 1.3vmax "Roboto";
+  }
+  .AddtoCart h3 {
+    font-size: 3.7vmax;
+  }
+}

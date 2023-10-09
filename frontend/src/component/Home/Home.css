@@ -1,0 +1,289 @@
+.banner {
+  margin-top: 6vmax;
+  background-image: url("../../images/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(198, 191, 191);
+}
+
+.banner > h1 {
+  margin: 3vmax;
+  color: rgb(0, 0, 0);
+  font: 600 2.8vmax "Roboto";
+}
+
+.banner > p {
+  font: 400 2.1vmax "Lucida Sans";
+  color: rgb(255, 255, 255);
+}
+
+.banner > a > button {
+  scroll-behavior: smooth;
+  margin-top: 4vmax;
+  cursor: pointer;
+  color: rgb(220, 214, 214);
+  border: none;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.3s;
+  width: 7vmax;
+  font: 500 1vmax "Roboto";
+}
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(141, 138, 138);
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  clip-path: polygon(100% 100%, 0 100%, 100% 100%);
+  position: absolute;
+  top: 0%;
+  left: 0;
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.7vmax;
+  border-bottom: 1.2px solid rgba(0, 0, 0, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  cursor: pointer;
+  width: 15vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  border: 0.3px solid rgba(15, 15, 15, 0.26);
+  border-radius: 25px;
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 13vmax;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8vmax;
+  height: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.1vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 1vmax;
+  margin-bottom: 0;
+  /* color: rgb(26, 26, 218); */
+  color: black;
+}
+
+.productCard > span {
+  margin: 0.5vmax 0.7vmax;
+  color: rgb(205, 39, 10);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2vmax;
+}
+
+.productCard > button {
+  width: 13vmax;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 251, 251);
+  transition: all 0.5s;
+  background-color: rgb(103, 103, 225);
+  font: 400 1.2vmax "Roboto";
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5vmax 1vmax;
+  outline: none;
+  margin: 1.1vmax 0.69vmax;
+}
+
+.productCard > button:hover {
+  background-color: rgb(34, 34, 185);
+}
+.productCard:hover {
+  box-shadow: 0 0 7px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+
+.rating {
+  position: absolute;
+  z-index: -1;
+}
+
+.button {
+  display: flex;
+  width: 12vmax;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 238, 238);
+  transition: all 0.5s;
+  background-color: #f23737;
+  border-radius: 12px;
+  font: 400 1.4vmax "Roboto";
+  padding: 0.8vmax;
+  margin-left: 43.5vmax;
+  margin-top: 2vmax;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #d22929;
+}
+@media screen and (width < 992px) {
+  .banner {
+    margin-top: 7.5vmax;
+  }
+  .productCard {
+    width: 16vmax;
+  }
+  .productCard > img {
+    margin-left: 1vmax;
+  }
+}
+
+@media screen and (width < 768px) {
+  .banner {
+    width: auto;
+  }
+  .productCard > img {
+    width: 12.7vmax;
+    height: 13.5vmax;
+    margin-left: 1.3vmax;
+  }
+  .productCard > p {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+    margin: 1.4vmax 1vmax;
+  }
+  .productCard > button {
+    margin: 1.5vmax 1vmax;
+  }
+}
+@media screen and (width < 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+  .productCard > span {
+    font-size: 1.7vmax;
+  }
+  .productCard {
+    width: 18vmax;
+    margin: 1.7vmax;
+  }
+  .productCard > button {
+    margin: 1.5vmax 1.7vmax;
+  }
+  .productCard > div {
+    margin: 0.5vmax;
+    display: block;
+  }
+
+  .productCard > img {
+    margin-left: 1.5vmax;
+  }
+  .button {
+    margin-left: 44vmax;
+  }
+}
+
+@media screen and (width < 570px) {
+  .banner {
+    margin-top: 7.9vmax;
+  }
+  .productCard {
+    width: 20vmax;
+  }
+  .productCard > img {
+    margin-left: 2vmax;
+  }
+  .productCard > button {
+    margin: 1.5vmax 2vmax;
+  }
+  .button {
+    margin-left: 38vmax;
+  }
+}
+
+@media screen and (width < 450px) {
+  .productCard > p {
+    font-size: 2vmax;
+  }
+  .productCard > span {
+    font-size: 2vmax;
+  }
+  .banner {
+    margin-top: 8.2vmax;
+  }
+  .productCard {
+    width: 25vmax;
+  }
+  .productCard > img {
+    margin-left: 4.5vmax;
+  }
+  .button {
+    margin-left: 20vmax;
+  }
+}
+
+@media screen and (width < 350px) {
+  .button {
+    margin-left: 16vmax;
+  }
+  .productCard {
+    width: 28vmax;
+    margin: 1.2vmax;
+  }
+  .productCard > button {
+    margin: 1.5vmax 2.3vmax;
+  }
+  .productCard > img {
+    margin-left: 5.6vmax;
+  }
+  .banner {
+    margin-top: 9.2vmax;
+  }
+}

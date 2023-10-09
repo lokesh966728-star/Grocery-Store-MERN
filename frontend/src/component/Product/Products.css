@@ -1,0 +1,205 @@
+.productsHeading {
+  margin: 7vmax 0vmax;
+  margin-bottom: 1vmax;
+  width: 100%;
+  overflow: hidden;
+  padding: 1.7vmax;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  color: rgb(75, 9, 122);
+  font-size: 2.5vmax;
+  text-align: center;
+  font-family: Young Serif;
+  background-color: rgb(213, 204, 219);
+}
+
+.products {
+  margin-top: 2.7vmax;
+  margin-left: 3vmax;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 1.9vmax;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 3vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(242, 237, 237);
+  list-style: none;
+  width: 4vmax;
+  border: 1px solid rgb(173, 169, 169);
+  padding: 1.1vmax 0vmax;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+  text-decoration: none;
+  font: 300 1vmax "Roboto";
+  color: black;
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(199, 193, 193);
+}
+
+.pageItemActive {
+  background-color: rgb(199, 193, 193);
+}
+
+.pageLinkActive {
+  color: black;
+}
+
+.filterBox {
+  width: 12vmax;
+  position: absolute;
+  top: 18vmax;
+  left: 2vmax;
+  border: 0.8px solid rgb(252, 251, 251);
+  border-radius: 23px;
+  padding: 8px;
+}
+
+.legend-p {
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+.legend-slider-p {
+  margin-bottom: 1.2vmax;
+}
+.legend-r {
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  margin-top: 3vmax;
+}
+.categoryBox {
+  padding: 0%;
+  margin-bottom: 2vmax;
+  margin-top: 0.3vmax;
+  border: 0.3px solid rgb(168, 167, 167);
+  border-radius: 23px;
+}
+
+.category-link {
+  list-style: none;
+  color: rgb(250, 0, 0);
+  font-size: 1.2vmax;
+  justify-content: center;
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: rgb(5, 71, 162);
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3000px) {
+  .products {
+    margin-top: 2.7vmax;
+    margin-left: 15vmax;
+  }
+}
+
+@media screen and (width < 992px) {
+  .filterBox {
+    width: 9vmax;
+    position: absolute;
+    top: 18vmax;
+    left: 1.7vmax;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .products {
+    margin-top: 2.7vmax;
+    margin-left: 10vmax;
+  }
+  .categoryBox {
+    border-radius: 17px;
+  }
+}
+
+@media screen and (width < 780px) {
+  .products {
+    margin-left: 14vmax;
+  }
+  .categoryBox {
+    border-radius: 8px;
+  }
+  .filterBox {
+    width: 12vmax;
+    top: 20vmax;
+  }
+  .productsHeading {
+    margin: 9vmax 0vmax;
+  }
+}
+@media screen and (width < 600px) {
+  .filterBox {
+    width: 17vmax;
+    margin: auto;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}
+
+@media screen and (width < 480px) {
+  .products {
+    margin-left: 17vmax;
+  }
+  .categoryBox {
+    border-radius: 7px;
+  }
+  .filterBox {
+    width: 17vmax;
+    top: 22vmax;
+  }
+  .productsHeading {
+    margin: 11vmax 0vmax;
+  }
+}
+
+@media screen and (width < 350px) {
+  .products {
+    margin-left: 22vmax;
+  }
+  .category-link {
+    font-size: 2vmax;
+  }
+  .filterBox {
+    width: 20vmax;
+    margin: auto;
+  }
+}

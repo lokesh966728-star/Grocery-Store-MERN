@@ -1,0 +1,56 @@
+.PageNotFound {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageNotFound h1 {
+  font-size: 8.7vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(103, 4, 173);
+}
+
+.page {
+  font-size: 2vmax;
+  font-weight: bold;
+  margin: 2vmax;
+}
+.desc {
+  font-size: 1vmax;
+  font-family: "Roboto";
+}
+
+.PageNotFound > a {
+  background-color: rgb(49, 49, 205);
+  color: white;
+  border: none;
+  padding: 1vmax;
+  cursor: pointer;
+  font: 400 1.1vmax "Roboto";
+  border-radius: 23px;
+  text-decoration: none;
+  margin: 2vmax;
+  width: auto;
+}
+
+.PageNotFound > a:hover {
+  background-color: rgb(34, 34, 185);
+}
+
+@media screen and (max-width: 600px) {
+  .desc {
+    font-size: 1.4vmax;
+  }
+
+  .PageNotFound > a {
+    font: 400 1.3vmax "Roboto";
+    padding: 1.1vmax;
+  }
+}

@@ -1,0 +1,839 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.navbar ul {
+  position: absolute;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  background: transparent;
+  padding: 0px;
+  margin: 1px;
+  width: 0px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3000px) {
+  .navbar ul li {
+    background: transparent;
+    padding: 0px 44px;
+    margin: 1rem;
+    height: auto;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 67px;
+    width: auto;
+    padding: 7px 1px;
+    margin: -1px -8px;
+  }
+
+  .search-icon img {
+    height: 45px;
+    width: auto;
+    padding: 10px 13px;
+    margin: 4px -38px;
+    margin-left: 42rem;
+  }
+
+  .search-icon img:hover {
+    border: solid black 1px;
+  }
+  .login-icon img {
+    height: 45px;
+    width: auto;
+    padding: 7px 14px;
+    margin: 5px -42px;
+    margin-left: 40rem;
+  }
+  .login-icon img:hover {
+    border: solid black 1px;
+  }
+
+  .cart img {
+    height: 43px;
+    width: auto;
+    padding: 5px 7px;
+    margin: 6px -37px;
+    margin-left: 38.5rem;
+  }
+  .cart img:hover {
+    border: solid black 1px;
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 2.1rem;
+    right: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 1.8rem;
+    cursor: pointer;
+    float: left;
+  }
+
+  nav .menu span {
+    z-index: 20;
+    height: 0.3rem;
+    width: 120%;
+    background-color: #000000;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  nav .cross span {
+    z-index: 20;
+    height: 0.3rem;
+    width: 120%;
+    background-color: #e00303;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .cross {
+    display: flex;
+    position: absolute;
+
+    top: 2.2rem;
+    right: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    cursor: pointer;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: rotate(45deg) translateX(21px) translateY(-1px);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg) translateX(20px) translateY(1px);
+    }
+  }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1200px) {
+  .navbar ul li {
+    background: transparent;
+    padding: 0px 4px;
+    margin: 0.6rem;
+    height: 3rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 60px;
+    width: auto;
+    padding: 7px 1px;
+    margin: -1px 28px;
+  }
+
+  .search-icon img {
+    height: 46px;
+    width: auto;
+    padding: 10px 10px;
+    margin: 4px -38px;
+    margin-left: 25rem;
+  }
+
+  .search-icon img:hover {
+    border: solid black 1px;
+  }
+  .login-icon img {
+    height: 45px;
+    width: auto;
+    padding: 7px 13px;
+    margin: 5px -42px;
+    margin-left: 25rem;
+  }
+  .login-icon img:hover {
+    border: solid black 1px;
+  }
+
+  .cart img {
+    height: 44px;
+    width: auto;
+    padding: 5px 7px;
+    margin: 3px -37px;
+    margin-left: 25rem;
+  }
+  .cart img:hover {
+    border: solid black 1px;
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 1.6rem;
+    right: 3.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 1.8rem;
+    cursor: pointer;
+  }
+
+  nav .menu span {
+    z-index: 20;
+    height: 0.23rem;
+    width: 100%;
+    padding: 2px;
+    margin: 2px;
+    background-color: #000000;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  nav .cross span {
+    z-index: 20;
+    height: 0.23rem;
+    width: 100%;
+    background-color: #e00303;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .cross {
+    display: flex;
+    position: absolute;
+    top: 1.6rem;
+    right: 3.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: rotate(45deg) translateX(15px) translateY(-1.5px);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg) translateX(16px) translateY(1px);
+    }
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 860px) {
+  .navbar ul li {
+    background: transparent;
+    padding: 0px 4px;
+    margin: 0rem;
+    height: 3rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    padding: 7px 1px;
+    margin: -1px 28px;
+  }
+
+  .search-icon img {
+    height: 42px;
+    width: auto;
+    padding: 10px 10px;
+    margin: 4px -38px;
+    margin-left: 10rem;
+  }
+
+  .search-icon img:hover {
+    border: solid black 1px;
+  }
+  .login-icon img {
+    height: 42px;
+    width: auto;
+    padding: 7px 13px;
+    margin: 5px -42px;
+    margin-left: 10rem;
+  }
+  .login-icon img:hover {
+    border: solid black 1px;
+  }
+
+  .cart img {
+    height: 38px;
+    width: auto;
+    padding: 5px 7px;
+    margin: 3px -37px;
+    margin-left: 10rem;
+  }
+  .cart img:hover {
+    border: solid black 1px;
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    margin-top: 2px;
+    right: 1.3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.6rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  nav .menu span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    padding: 1.8px;
+    margin: 1.7px;
+    background-color: #000000;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  nav .cross span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    background-color: #e00303;
+    padding: 1.8px;
+    margin: 1.7px;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .cross {
+    display: flex;
+    position: absolute;
+    margin-top: 2px;
+    top: 1rem;
+    right: 1.3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.6rem;
+    height: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: rotate(45deg) translateX(10px) translateY(-1px);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg) translateX(11px) translateY(0px);
+    }
+  }
+}
+
+@media only screen and (min-width: 355px) and (max-width: 520px) {
+  .navbar ul li {
+    background: transparent;
+    padding: 0px 4px;
+    margin: 0rem;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 40px;
+    width: auto;
+    padding: 7px 1px;
+    margin: 2px 8px;
+  }
+
+  .search-icon img {
+    height: 35px;
+    width: auto;
+    padding: 10px 10px;
+    margin: 4px -38px;
+    margin-left: 8rem;
+  }
+
+  .search-icon img:hover {
+    border: solid black 1px;
+  }
+  .login-icon img {
+    height: 35px;
+    width: auto;
+    padding: 7px 13px;
+    margin: 5px -42px;
+    margin-left: 7rem;
+  }
+  .login-icon img:hover {
+    border: solid black 1px;
+  }
+
+  .cart img {
+    height: 34px;
+    width: auto;
+    padding: 5px 7px;
+    margin: 3px -37px;
+    margin-left: 7rem;
+  }
+  .cart img:hover {
+    border: solid black 1px;
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 0.7rem;
+    margin-top: 5px;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.25rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav .menu span {
+    height: 0.23rem;
+    z-index: 20;
+    /* width: 100%; */
+    padding: 1.3px;
+    margin: 1.6px;
+    background-color: #000000;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  nav .cross span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    background-color: #e00303;
+    padding: 1.3px;
+    margin: 1.6px;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .cross {
+    display: flex;
+
+    position: absolute;
+    margin-top: 5px;
+    top: 0.7rem;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.25rem;
+    height: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: rotate(45deg) translateX(8px) translateY(-1px);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg) translateX(9.2px) translateY(-1px);
+    }
+  }
+}
+
+@media (width < 355px) {
+  .navbar ul li {
+    background: transparent;
+    padding: 0px 4px;
+    margin: 0rem;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 38px;
+    width: auto;
+    padding: 7px 1px;
+    margin: 2px 8px;
+  }
+
+  .search-icon img {
+    height: 33px;
+    width: auto;
+    padding: 10px 10px;
+    margin: 4px -38px;
+    margin-left: 5rem;
+  }
+
+  .search-icon img:hover {
+    border: solid black 1px;
+  }
+  .login-icon img {
+    height: 33px;
+    width: auto;
+    padding: 7px 13px;
+    margin: 5px -42px;
+    margin-left: 4rem;
+  }
+  .login-icon img:hover {
+    border: solid black 1px;
+  }
+
+  .cart img {
+    height: 33px;
+    width: auto;
+    padding: 5px 7px;
+    margin: 3px -37px;
+    margin-left: 4rem;
+  }
+  .cart img:hover {
+    border: solid black 1px;
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 0.7rem;
+    margin-top: 5px;
+    right: 0.7rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.25rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav .menu span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    padding: 1.3px;
+    margin: 1.6px;
+    background-color: #000000;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  nav .cross span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    background-color: #e00303;
+
+    padding: 1.3px;
+    margin: 1.6px;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .cross {
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    top: 0.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.25rem;
+    height: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: rotate(45deg) translateX(8px) translateY(-1px);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg) translateX(9.2px) translateY(-1px);
+    }
+  }
+  .open li a {
+    z-index: 15;
+    background: transparent;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    letter-spacing: 3rem;
+    color: rgb(207, 22, 22);
+    text-decoration: none;
+    transition: color 0.3s linear;
+  }
+}
+
+nav .open {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0e0e0e;
+
+  transform: translateX(0);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open li {
+  z-index: 10;
+  background: transparent;
+  padding: 10px 0rem;
+  margin: 14px;
+}
+
+.open li a {
+  z-index: 10;
+  background: transparent;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 2rem 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.open li a:hover {
+  z-index: 10;
+  font-weight: bolder;
+  color: rgb(170, 80, 205);
+}
+
+ul.close {
+  display: none;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+}
+
+@media (width < 280px) {
+  .navbar ul li {
+    background: transparent;
+    padding: 0px 4px;
+    margin: 0rem;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 38px;
+    width: auto;
+    padding: 7px 1px;
+    margin: 2px 8px;
+  }
+
+  .search-icon img {
+    height: 33px;
+    width: auto;
+    padding: 10px 10px;
+    margin: 4px -38px;
+    margin-left: 2.7rem;
+  }
+
+  .search-icon img:hover {
+    border: solid black 1px;
+  }
+  .login-icon img {
+    height: 33px;
+    width: auto;
+    padding: 7px 13px;
+    margin: 5px -42px;
+    margin-left: 2.1rem;
+  }
+  .login-icon img:hover {
+    border: solid black 1px;
+  }
+
+  .cart img {
+    height: 33px;
+    width: auto;
+    padding: 5px 7px;
+    margin: 3px -37px;
+    margin-left: 2.1rem;
+  }
+  .cart img:hover {
+    border: solid black 1px;
+  }
+
+  nav .menu {
+    display: flex;
+    position: absolute;
+    top: 0.7rem;
+    margin-top: 5px;
+    right: 0.7rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.25rem;
+    height: 1.1rem;
+    cursor: pointer;
+  }
+
+  nav .menu span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    padding: 1.3px;
+    margin: 1.6px;
+    background-color: #000000;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  nav .cross span {
+    z-index: 20;
+    height: 0.23rem;
+    /* width: 100%; */
+    background-color: #e00303;
+
+    padding: 1.3px;
+    margin: 1.6px;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .cross {
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    top: 0.7rem;
+    right: 0.8rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.25rem;
+    height: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 1px;
+
+    :first-child {
+      transform: rotate(45deg) translateX(8px) translateY(-1px);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg) translateX(9.2px) translateY(-1px);
+    }
+  }
+  .open li a {
+    z-index: 15;
+    background: transparent;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    letter-spacing: 3rem;
+    color: rgb(207, 22, 22);
+    text-decoration: none;
+    transition: color 0.3s linear;
+  }
+}
+
+nav .open {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0e0e0e;
+
+  transform: translateX(0);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open li {
+  z-index: 10;
+  background: transparent;
+  padding: 10px 0rem;
+  margin: 14px;
+}
+
+.open li a {
+  z-index: 10;
+  background: transparent;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 2rem 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.open li a:hover {
+  z-index: 10;
+  font-weight: bolder;
+  color: rgb(170, 80, 205);
+}
+
+ul.close {
+  display: none;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+}
