@@ -37,10 +37,10 @@ export const getProduct = (
   try {
     dispatch({ type: ALL_PRODUCT_REQUEST });
 
-    let link = `http://localhost:3001/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
+    let link = `https://grocery-store-backend-three.vercel.app/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
 
     if (category) {
-      link = `https://grocery-store-theta.vercel.app/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
+      link = `https://grocery-store-backend-three.vercel.app/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
     }
     const response = await fetch(link, {
       withCredentials: true,
@@ -72,7 +72,7 @@ export const getAdminProduct = () => async (dispatch) => {
     dispatch({ type: ADMIN_PRODUCT_REQUEST });
 
     // const { data } = await axios.get("/api/v1/admin/products");
-    let link = `https://grocery-store-theta.vercel.app/api/v1/admin/products`;
+    let link = `https://grocery-store-backend-three.vercel.app/api/v1/admin/products`;
     const response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
@@ -102,7 +102,7 @@ export const createProduct = (productData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_PRODUCT_REQUEST });
 
-    let link = "https://grocery-store-theta.vercel.app/api/v1/admin/product/new";
+    let link = "https://grocery-store-backend-three.vercel.app/api/v1/admin/product/new";
     let response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
@@ -132,7 +132,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
 
-    let link = `https://grocery-store-theta.vercel.app/api/v1/admin/product/${id}`;
+    let link = `https://grocery-store-backend-three.vercel.app/api/v1/admin/product/${id}`;
     let response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
@@ -161,7 +161,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
   try {
     dispatch({ type: UPDATE_PRODUCT_REQUEST });
 
-    let link = `https://grocery-store-theta.vercel.app/api/v1/admin/product/${id}`;
+    let link = `https://grocery-store-backend-three.vercel.app/api/v1/admin/product/${id}`;
     let response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
@@ -190,7 +190,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
 export const newReview = (reviewData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_REVIEW_REQUEST });
-    let link = "https://grocery-store-theta.vercel.app/api/v1/review";
+    let link = "https://grocery-store-backend-three.vercel.app/api/v1/review";
     let response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
@@ -222,7 +222,7 @@ export const getAllReviews = (id) => async (dispatch) => {
     dispatch({ type: ALL_REVIEW_REQUEST });
 
     // const { data } = await axios.get(`/api/v1/reviews?id=${id}`);
-    let link = `https://grocery-store-theta.vercel.app/api/v1/reviews?id=${id}`;
+    let link = `https://grocery-store-backend-three.vercel.app/api/v1/reviews?id=${id}`;
     let response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
@@ -251,7 +251,7 @@ export const deleteReviews = (reviewId, productId) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_REVIEW_REQUEST });
 
-    let link = `https://grocery-store-theta.vercel.app/api/v1/reviews?id=${reviewId}&productId=${productId}`;
+    let link = `https://grocery-store-backend-three.vercel.app/api/v1/reviews?id=${reviewId}&productId=${productId}`;
     let response = await fetch(link, {
       withCredentials: true,
       credentials: "include",
