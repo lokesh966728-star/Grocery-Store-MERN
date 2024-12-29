@@ -58,7 +58,7 @@ const Products = () => {
 
   return (
     <Fragment>
-      {loading ? (
+      {loading ? (    
         <Loader />
       ) : (
         <Fragment>

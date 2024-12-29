@@ -50,7 +50,7 @@ export const getProduct = (
         Accept: "*/*",
         "Content-Type": "application/json",
       },
-    });
+    });   
 
     const data = await response.json();
 
@@ -75,7 +75,7 @@ export const getAdminProduct = () => async (dispatch) => {
     let link = `https://grocery-store-backend-three.vercel.app/api/v1/admin/products`;
     const response = await fetch(link, {
       withCredentials: true,
-      credentials: "include",
+      credentials: "include", 
       method: "GET",
       headers: {
         Accept: "*/*",
@@ -125,7 +125,7 @@ export const createProduct = (productData) => async (dispatch) => {
       payload: error.response,
     });
   }
-};
+};  
 
 // Delete Product
 export const deleteProduct = (id) => async (dispatch) => {
@@ -137,7 +137,7 @@ export const deleteProduct = (id) => async (dispatch) => {
       withCredentials: true,
       credentials: "include",
       method: "DELETE",
-      headers: {
+      headers: {  
         Accept: "*/*",
       },
     });

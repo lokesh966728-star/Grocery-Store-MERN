@@ -7,21 +7,21 @@ const About = () => {
     <div className="aboutSection">
       <MetaData
         title="About Us -- Developer"
-        description="About Developer | Sunidhi Jain"
+        description="Learn more about the developer, Sunidhi Jain, and this project."
       />
       <div className="aboutSectionContainer">
-        <h1>Sunidhi Jain</h1>
+        <h1>About the Developer</h1>
 
         <p>
-          I'm a <span> FULL STACK DEVELOPER </span> and this is just a sample
-          website project. This can be used to shop grocery items like fruits,
-          vegetables, snacks, beverages, etc.
+          Hello! I am <span>Sunidhi Jain</span>, a passionate <span>Full Stack Developer</span>. 
+          This project is a sample e-commerce platform designed to streamline your grocery shopping experience. 
+          From fresh fruits and vegetables to snacks and beverages, it’s built to handle it all.
           <br />
           <br />
-          Built by using MERN Stack in backend and React-Redux in frontend..
-          <br />
+          This application is crafted using the <strong>MERN Stack</strong>, combining MongoDB, Express.js, React, and Node.js for a seamless backend and frontend integration.
         </p>
-        <span> Copyrights 2023 &copy; SunidhiJain</span>
+
+        <span>Copyright &copy; 2023 Sunidhi Jain. All rights reserved.</span>
       </div>
     </div>
   );

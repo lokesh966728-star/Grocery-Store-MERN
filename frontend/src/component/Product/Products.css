@@ -100,16 +100,16 @@
   margin-top: 3vmax;
 }
 .categoryBox {
-  padding: 0%;
+  padding: 1%;
   margin-bottom: 2vmax;
-  margin-top: 0.3vmax;
-  border: 0.3px solid rgb(168, 167, 167);
-  border-radius: 23px;
+  margin-top: 1vmax;
+  border-left: 0.3px solid rgb(168, 167, 167);
+  /* border-radius: 23px; */
 }
 
 .category-link {
   list-style: none;
-  color: rgb(250, 0, 0);
+  color: rgb(255, 40, 40);
   font-size: 1.2vmax;
   justify-content: center;
   margin: 0.4vmax;
@@ -117,7 +117,7 @@
   transition: all 0.5s;
 }
 .category-link:hover {
-  color: rgb(5, 71, 162);
+  color: rgb(55, 117, 204);
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 3000px) {

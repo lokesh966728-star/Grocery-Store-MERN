@@ -49,7 +49,7 @@ export const productsReducer = (state = { products: [] }, action) => {
         filteredProductsCount: action.payload.filteredProductsCount,
       };
 
-    case ADMIN_PRODUCT_SUCCESS:
+    case ADMIN_PRODUCT_SUCCESS: 
       return {
         loading: false,
         products: action.payload,

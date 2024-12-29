@@ -11,8 +11,8 @@ const ProductCard = ({ product }) => {
   };
   const navigate = useNavigate();
   function shopnow() {
-    navigate("/shop");
-  }
+    navigate("/login");
+  } 
   return (
     <div className="productCard">
       <img src={product.images[0].url} alt={product.name} />

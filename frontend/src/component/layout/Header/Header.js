@@ -14,7 +14,7 @@ const Header = () => {
         <div className="navbar">
           <ul>
             <li className="logo">
-              <a href="e-commerce.com">
+              <a href="/">
                 <img src={logo} alt="E-commerce" />
               </a>
             </li>
@@ -32,7 +32,7 @@ const Header = () => {
             </li>
 
             <li className="cart">
-              <a href="/shop">
+              <a href="/login">
                 <img src={cart} alt="Add to Cart" />
               </a>
             </li>
