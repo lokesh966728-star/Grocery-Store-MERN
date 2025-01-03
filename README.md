@@ -59,6 +59,7 @@ An e-commerce platform for buying grocery items, offering users a seamless onlin
     npm run dev
 
 <br/>
+
 ## Contribution Guide
 We welcome contributions to the Food Copilot project! Feel free to report bugs, suggest features, or submit pull requests. Follow these steps to get started:
 
