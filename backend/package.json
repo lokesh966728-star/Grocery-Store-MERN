@@ -24,6 +24,7 @@
     "express-fileupload": "^1.4.0",
     "https-proxy-agent": "^7.0.2",
     "jsonwebtoken": "^9.0.1",
+    "mern-folder": "file:",
     "mongoose": "^7.4.0",
     "nodemailer": "^6.9.4",
     "stripe": "^13.5.0",
